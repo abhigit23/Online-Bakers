@@ -450,7 +450,7 @@ p {
 #section-6 {
   display: flex;
   justify-content: center;
-  background: url(img/bg6.jpg) center/cover;
+  background: url(assets/bg6.jpg) center/cover;
   height: 600px;
   padding: var(--spacing-lg);
   color: var(--bg-white);
