@@ -54,7 +54,6 @@ createDots();
 
 dotCotainer.addEventListener("click", function (e) {
   if (e.target.classList.contains("dots__dot")) {
-    // console.log(e.target.dataset);
     const { slide } = e.target.dataset;
     goToSlide(slide);
     activateDot(slide);

@@ -28,8 +28,6 @@ body {
   margin: 0;
   font-family: "Aleo", serif;
   overflow-x: hidden;
-  /* display: flex;
-  justify-content: center; */
 }
 
 h1 {
@@ -83,7 +81,6 @@ p {
 
 .header-container {
   display: none;
-  /* display: flex; */
   justify-content: space-around;
   text-align: center;
   background-color: var(--bg-dark-grey);
@@ -125,11 +122,7 @@ p {
   align-items: center;
   height: 75px;
   background-color: whitesmoke;
-  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.2); */
   width: 100%;
-
-  /* position: relative; */
-
   transition: height 0.3s ease;
 }
 
@@ -156,7 +149,6 @@ p {
   align-items: center;
   list-style: none;
   padding: 0;
-  /* margin: 0 8rem; */
 }
 
 .navbar .links li {
@@ -182,7 +174,6 @@ p {
 .hamburger-button {
   width: 50px;
   height: 30px;
-  /* background-color: rgba(250, 250, 250, 0.25); */
   border-radius: var(--standard-border-radius);
   display: flex;
   flex-direction: column;
@@ -346,9 +337,6 @@ p {
 #section-4 .two-column {
   display: flex;
   justify-content: space-between;
-  /* position: relative;
-  left: 15%; */
-  /* width: 80%; */
 }
 
 #section-4 .column-left {
@@ -361,7 +349,6 @@ p {
 #section-4 .choose-us-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* width: 90%; */
 }
 
 #section-4 .choose-us-grid .item .text h4 {
@@ -389,7 +376,6 @@ p {
 
 #section-5 {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   padding: var(--spacing-lg) 0;
@@ -420,7 +406,6 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 32px 0;
-  /* text-align: center; */
 }
 
 #section-5 .menu .menu-item h4 {
@@ -542,7 +527,6 @@ p {
   margin-right: 1.75rem;
   cursor: pointer;
   transition: all 0.5s;
-  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
 }
 
 .dots__dot:last-child {
@@ -550,7 +534,6 @@ p {
 }
 
 .dots__dot--active {
-  /* background-color: #fff; */
   background-color: orangered;
   opacity: 1;
 }
@@ -569,7 +552,6 @@ p {
 .footer .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* align-items: start; */
   gap: 0 50px;
 }
 
@@ -589,7 +571,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 90%; */
 }
 
 .footer .grid-container .col-4 .pic-grid {
