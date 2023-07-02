@@ -3,12 +3,22 @@ const mobileNavbar = document.querySelector(".mobile-nav-container");
 const dotCotainer = document.querySelector(".dots");
 const slides = document.querySelectorAll(".customer");
 const navbar = document.querySelector(".navbar");
+const navLinks = document.querySelector(".links");
+const mql = window.matchMedia("(min-width:1050px)");
 
 // Collapse Hamburger Menu
 hamburgerBtn.addEventListener("click", (e) => {
   e.preventDefault();
   navbar.classList.toggle("mobile-navbar");
+  navLinks.classList.toggle("drop-down-nav");
 });
+
+mql.onchange = (e) => {
+  if (e.matches) {
+    navLinks.classList.remove("drop-down-nav");
+    navbar.classList.remove("mobile-navbar");
+  }
+};
 
 // Review Slides
 

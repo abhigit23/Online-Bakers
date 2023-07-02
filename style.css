@@ -28,6 +28,7 @@ body {
   margin: 0;
   font-family: "Aleo", serif;
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1 {
@@ -121,9 +122,9 @@ p {
   justify-content: center;
   align-items: center;
   height: 75px;
-  background-color: whitesmoke;
+  background-color: white;
   width: 100%;
-  transition: height 0.3s ease;
+  transition: all 0.15s ease;
 }
 
 .sticky {
@@ -190,6 +191,8 @@ p {
 
 .mobile-navbar {
   height: 500px;
+  position: relative;
+  z-index: 1;
 }
 
 .mobile-nav {
@@ -209,6 +212,22 @@ p {
 .mobile-nav p {
   font-weight: bold;
   color: black;
+}
+
+/* MOBILE NAV DROP-DOWN MENU */
+.drop-down-nav {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 55px;
+  align-items: flex-start !important;
+  z-index: -1;
+  margin-top: 45px;
+}
+
+.drop-down-nav li {
+  margin: 0 0 35px 10px !important;
 }
 
 /* SECTION 1 STYLES */
@@ -248,7 +267,6 @@ p {
   background-color: var(--bg-white-smoke);
   display: flex;
   justify-content: center;
-  /* height: 100vh; */
 }
 
 #section-2 .three-column {
@@ -672,8 +690,11 @@ p {
     width: 65%;
   }
 
-  .navbar .links,
-  .order-button {
+  .navbar .order-button {
+    display: none;
+  }
+
+  .navbar .links {
     display: none;
   }
 
